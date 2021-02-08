@@ -23,4 +23,9 @@ public class ExampleXxlJob {
         logger.info("XXL-JOB, Hello World, port: {}.", port);
     }
 
+    @XxlJob("testXxlJobCluster")
+    public void testXxlJobCluster() {
+        logger.info("测试执行器集群指定执行器执行, port: {}.", port);
+    }
+
 }
